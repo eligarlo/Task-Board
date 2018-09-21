@@ -1,0 +1,201 @@
+
+@primary-color: #007bff;
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: @primary-color; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #108301; 
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url('img/tile.jpg');
+    background-size: auto;
+    margin: 0 auto;    
+
+    header {
+
+        .bckimg {
+            background-image: url('img/title.png');
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 50px;
+            margin-top: 50px;
+        }
+        
+    }
+
+    main {
+        background-image: url('img/formbg.jpg');
+        border: 20px solid #262626;
+        border-radius: 280px;
+        background-size: contain;
+        margin-top: 25px;
+        padding: 5px;
+
+        .container {
+            .title {
+                padding-top: 35px;
+                margin-bottom: 35px;
+            }
+        }
+
+        .newTask-text-center {
+            margin-right: 40px;
+        }
+
+        .newTask-text-padding {
+            padding-top: 20px;
+        
+            #textTask{
+                background: transparent;
+                color: black;
+                resize: none;
+                border: 0 none;
+                width: 100%;
+                font-size: 2.7em;
+                outline: none;
+                height: 100%
+            }
+        }
+        #headerNewTask {
+            background-color: @primary-color;
+            border-radius: 50px 10px;
+            max-width: 200px;
+            text-align: center;
+        }
+        .alertNotification {
+        display: none;
+        margin-top: 5px;
+        border: 1px solid red;
+        border-radius: 10px 50px;
+        background-color: rgba(255,0,0,0.6);
+        color: white;
+        text-align: center;
+        font-style: italic;
+        max-width: 250px;
+        }
+    }
+
+    footer { 
+        
+        margin-top: 30px;
+        
+        .expiredDate {
+            display: none;
+            border: 1px solid red;
+            border-radius: 10px 50px;
+            background-color: rgba(255,0,0,0.6);
+            color: white;
+            text-align: center;
+            font-style: italic;
+            max-width: 180px;
+        }
+        .showExpiredDate:hover .expiredDate {
+            display: block;
+        }
+        .invisi{
+            transition: 0.4s ease-in;
+            opacity: 0;
+        }
+        .visi{
+            transition: 0.4s ease-in;
+            opacity: 1;
+        }
+        .notes-img{
+            background-image:url('img/notebg.png');
+            background-size: contain;
+            background-repeat:no-repeat;
+            min-width:200px;
+            min-height:250px;
+            max-width: 200px;
+            max-height: 250px;            
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding-top: 35px;
+            padding-right: 2%;
+
+            .note {
+                background: transparent;
+                color: black;
+                resize: none;
+                border: 0 none;
+                width: 100%;
+                outline: none;
+                height: 100%;
+
+            }          
+
+            .underline {
+                border-bottom: 1px solid black;
+            }
+
+            #textNote{
+                background: transparent;
+                color: black;
+                resize: none;
+                border: 0 none;
+                outline: none;
+                overflow-y: auto;
+                max-width:150px;
+                min-height: 130px;
+                max-height: 110px; 
+            }            
+            
+        } 
+        .show-remove:hover .remove,.show-remove:hover .editNote{
+            display: block;
+            max-width: 200px;
+            min-width: 14px;
+            float:right;
+        }
+        .sm-height {
+            max-width: 105.5px;
+        }  
+        .trash-place{
+            padding-right: 21%;
+            padding-left: 13%;
+            margin-bottom: 4%;
+            max-width: 105.5px;
+                .remove {
+                    display: none;
+                    cursor: pointer;
+            }
+                .editNote{
+                    display: none;
+                    cursor: pointer;
+                    padding-right: 3px;
+            }
+        }   
+        .copyright {
+            background-color: #333333;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+        }
+        #gitHub {
+            width: 50px;
+            margin-top: -20px;
+        }
+    }
+}
+
+
